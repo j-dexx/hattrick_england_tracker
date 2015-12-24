@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'puma'
 
 gem 'omniauth-hattrick'
-
+gem 'clearance', path: '../clearance'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -52,6 +52,7 @@ group :development do
 end
 
 group :test do
+  gem 'capybara', github: 'jnicklas/capybara'
   gem "capybara-webkit"
   gem "database_cleaner"
   gem "formulaic"

@@ -1,6 +1,17 @@
 GIT
+  remote: git://github.com/jnicklas/capybara.git
+  revision: 343f851ee09e5ee9f02be2a57f6eb97082b40081
+  specs:
+    capybara (2.6.0.dev)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+
+GIT
   remote: git://github.com/rspec/rspec-core.git
-  revision: e27f3a0df9c182de9a7c9727a6d8ed6a20aebbb1
+  revision: 8cb45cc8779d09b13e054ecb94c911b7e14f7fde
   branch: master
   specs:
     rspec-core (3.5.0.pre)
@@ -26,7 +37,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-rails.git
-  revision: b1dff7fb6c3b67650e05865abc9676738076fcf0
+  revision: 7f2b695a2e70af1aa4f78346143e71e926bbccd7
   specs:
     rspec-rails (3.5.0.pre)
       actionpack (>= 3.0)
@@ -39,7 +50,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-support.git
-  revision: a0bc8606b33041dee1e1eae17def1e37ed4bf734
+  revision: b0ff0f6e157288c33f8dc6d57f4ee157d43152fa
   branch: master
   specs:
     rspec-support (3.5.0.pre)
@@ -53,6 +64,14 @@ GIT
       rspec-core (= 3.5.0.pre)
       rspec-expectations (= 3.5.0.pre)
       rspec-mocks (= 3.5.0.pre)
+
+PATH
+  remote: ../clearance
+  specs:
+    clearance (1.12.0)
+      bcrypt
+      email_validator (~> 1.4)
+      rails (>= 3.1)
 
 GEM
   remote: https://rubygems.org/
@@ -103,14 +122,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (7.0.0)
+    bcrypt (3.1.10)
     builder (3.2.2)
     byebug (8.2.1)
-    capybara (2.5.0)
-      mime-types (>= 1.16)
-      nokogiri (>= 1.3.3)
-      rack (>= 1.0.0)
-      rack-test (>= 0.5.4)
-      xpath (~> 2.0)
     capybara-webkit (1.7.1)
       capybara (>= 2.3.0, < 2.6.0)
       json
@@ -152,6 +166,8 @@ GEM
     em-hiredis (0.3.0)
       eventmachine (~> 1.0)
       hiredis (~> 0.5.0)
+    email_validator (1.6.0)
+      activemodel
     erubis (2.7.0)
     eventmachine (1.0.8)
     execjs (2.6.0)
@@ -300,7 +316,9 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  capybara!
   capybara-webkit
+  clearance!
   coffee-rails (~> 4.1.0)
   database_cleaner
   dotenv-rails
