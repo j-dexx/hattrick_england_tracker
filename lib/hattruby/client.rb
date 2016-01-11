@@ -1,7 +1,9 @@
 require 'hattruby/request'
+require 'hattruby/api'
 
 module Hattruby
   class Client
+    include Hattruby::API
     attr_reader :consumer_key, :consumer_secret,
       :token, :token_secret
 
