@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/jnicklas/capybara.git
-  revision: 343f851ee09e5ee9f02be2a57f6eb97082b40081
+  revision: 4b3093f4bd12a682b41d8e88d3958d33e70f4662
   specs:
     capybara (2.6.0.dev)
       mime-types (>= 1.16)
@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-core.git
-  revision: 8cb45cc8779d09b13e054ecb94c911b7e14f7fde
+  revision: 5800249ae9f15056f8457dfd257f778096b550a9
   branch: master
   specs:
     rspec-core (3.5.0.pre)
@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-expectations.git
-  revision: 87376eed1f580682c86ea88448ab0411be238c07
+  revision: d17110bdd0dca2e8daa3339c0fcfafcc5dc31a9c
   branch: master
   specs:
     rspec-expectations (3.5.0.pre)
@@ -28,7 +28,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-mocks.git
-  revision: b94e242ebbc51081fc2245e37c574f5d6d02b7f8
+  revision: eae0606af439f81db374e824fa57a51daccc0985
   branch: master
   specs:
     rspec-mocks (3.5.0.pre)
@@ -37,7 +37,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-rails.git
-  revision: 7f2b695a2e70af1aa4f78346143e71e926bbccd7
+  revision: b2ac99c4202245598f3a15f14aa22ae3cd1b66b7
   specs:
     rspec-rails (3.5.0.pre)
       actionpack (>= 3.0)
@@ -50,7 +50,7 @@ GIT
 
 GIT
   remote: git://github.com/rspec/rspec-support.git
-  revision: b0ff0f6e157288c33f8dc6d57f4ee157d43152fa
+  revision: 4b938ec512d2fbee945913afbb957b510244ecb3
   branch: master
   specs:
     rspec-support (3.5.0.pre)
@@ -65,10 +65,12 @@ GIT
       rspec-expectations (= 3.5.0.pre)
       rspec-mocks (= 3.5.0.pre)
 
-PATH
-  remote: ../clearance
+GIT
+  remote: git://github.com/thoughtbot/clearance.git
+  revision: 0b2cb45d20797210835a82f5f2976cb59c1845dc
+  branch: dp-hide-action
   specs:
-    clearance (1.12.0)
+    clearance (1.12.1)
       bcrypt
       email_validator (~> 1.4)
       rails (>= 3.1)
@@ -189,9 +191,12 @@ GEM
     hashie (3.4.3)
     hiredis (0.5.2)
     hitimes (1.2.3)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
-    jbuilder (2.3.2)
-      activesupport (>= 3.0.0, < 5)
+    jbuilder (2.4.0)
+      activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
     jquery-rails (4.0.5)
       rails-dom-testing (~> 1.0)
@@ -209,6 +214,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
+    multi_xml (0.5.5)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     oauth (0.4.7)
@@ -267,15 +273,16 @@ GEM
     rake (10.4.2)
     redis (3.2.2)
     safe_yaml (1.0.4)
-    shoulda-matchers (3.0.1)
+    shoulda-matchers (3.1.0)
       activesupport (>= 4.0.0)
+    simple_oauth (0.3.1)
     simplecov (0.11.1)
       docile (~> 1.1.0)
       json (~> 1.8)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
     slop (3.6.0)
-    spring (1.6.1)
+    spring (1.6.2)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
     sprockets (3.5.2)
@@ -301,7 +308,7 @@ GEM
       activemodel (>= 4.2)
       debug_inspector
       railties (>= 4.2)
-    webmock (1.22.3)
+    webmock (1.22.6)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
@@ -324,6 +331,7 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   formulaic
+  httparty
   jbuilder (~> 2.0)
   jquery-rails
   launchy
@@ -341,6 +349,7 @@ DEPENDENCIES
   rspec-rails!
   rspec-support!
   shoulda-matchers
+  simple_oauth
   simplecov
   spring
   spring-commands-rspec
