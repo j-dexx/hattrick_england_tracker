@@ -5,8 +5,8 @@ describe Hattruby::Client do
     tokens = {
       consumer_key: 'CK',
       consumer_secret: 'CS',
-      access_token: 'AT',
-      access_secret: 'AS'
+      token: 'AT',
+      token_secret: 'AS'
     }
     client = Hattruby::Client.new(tokens)
 

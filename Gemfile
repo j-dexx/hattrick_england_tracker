@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 5.0.0.beta1', '< 5.1'
+gem 'rails', '>= 5.0.0.rc1', '< 5.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Uglifier as compressor for JavaScript assets
@@ -24,8 +24,7 @@ gem 'puma'
 gem 'omniauth-hattrick'
 gem 'simple_oauth'
 gem 'httparty'
-
-gem 'clearance', github: 'thoughtbot/clearance', branch: 'dp-hide-action'
+gem 'clearance', '~> 1.14', '>= 1.14.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -39,10 +38,11 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "pry-byebug"
   gem "pry-rails"
-  gem "rspec-rails", github: 'rspec/rspec-rails'#, branch: 'rails-5-support-patches'
-  %w[rspec rspec-core rspec-expectations rspec-mocks rspec-support].each do |lib|
-      gem lib, :git => "git://github.com/rspec/#{lib}.git", :branch => 'master'
-  end
+  gem 'rspec-rails', '~> 3.5.0.beta4'
+  # gem "rspec-rails", github: 'rspec/rspec-rails'#, branch: 'rails-5-support-patches'
+  # %w[rspec rspec-core rspec-expectations rspec-mocks rspec-support].each do |lib|
+  #     gem lib, :git => "git://github.com/rspec/#{lib}.git", :branch => 'master'
+  # end
 end
 
 group :development do
