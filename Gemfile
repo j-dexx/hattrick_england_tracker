@@ -22,8 +22,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'puma'
 
 gem 'omniauth-hattrick'
-gem 'simple_oauth'
-gem 'httparty'
+gem 'hattruby', github: 'j-dexx/hattruby'
 gem 'clearance', '~> 1.14', '>= 1.14.1'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

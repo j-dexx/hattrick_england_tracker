@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/j-dexx/hattruby.git
+  revision: 08237806e787efcb0db115d2f77c1f97b8fc3054
+  specs:
+    hattruby (0.1.0)
+      httparty (~> 0.13.7)
+      simple_oauth (~> 0.3.1)
+
+GIT
   remote: git://github.com/jnicklas/capybara.git
   revision: a59cb5b247b44b2c099feaf44b9430e4d76cdbd0
   specs:
@@ -256,7 +264,7 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   formulaic
-  httparty
+  hattruby!
   jbuilder (~> 2.0)
   jquery-rails
   launchy
@@ -269,7 +277,6 @@ DEPENDENCIES
   rails (>= 5.0.0.rc1, < 5.1)
   rspec-rails (~> 3.5.0.beta4)
   shoulda-matchers
-  simple_oauth
   simplecov
   spring
   spring-commands-rspec
